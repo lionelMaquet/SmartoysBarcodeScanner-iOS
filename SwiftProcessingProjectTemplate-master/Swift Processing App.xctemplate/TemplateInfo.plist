@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.swiftprocessing.dt.unit.swiftProcessingApplication</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.coreDataCocoaTouchApplication</string>
+		<string>com.apple.dt.unit.sceneLifecycleApplication</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>This template provides a starting point for an application that uses Swift Processing. The project comes ready to start writting Swift Processing code in the Sketch file.</string>
+	<key>SortOrder</key>
+	<integer>1</integer>
+	<key>NameOfInitialFileForEditor</key>
+	<string>ContentView.swift</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Swift</key>
+				<array>
+					<dict>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>userInterface</key>
+							<string>Storyboard</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>Base.lproj/Main.storyboard</string>
+							<string>Info.plist:UIMainStoryboardFile</string>
+							<string>Info.plist:UIApplicationSceneManifest:UISceneStoryboardFile</string>
+							<string>Info.plist:Privacy - Camera Usage Description</string>
+							<string>Info.plist:NSCameraUsageDescription</string>
+							<string>MySketch.swift</string>
+							<string>AppViewController.swift</string>
+							<string>FaceViewController.swift</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>Base.lproj/Main.storyboard</key>
+							<dict>
+								<key>Path</key>
+								<string>Main.storyboard</string>
+								<key>SortOrder</key>
+								<string>98</string>
+							</dict>
+							<key>FaceViewController.swift</key>
+							<dict>
+								<key>Path</key>
+								<string>FaceViewController.swift</string>
+							</dict>
+							<key>AppViewController.swift</key>
+							<dict>
+								<key>Path</key>
+								<string>AppViewController.swift</string>
+							</dict>
+							<key>MySketch.swift</key>
+							<dict>
+								<key>Path</key>
+								<string>MySketch.swift</string>
+							</dict>
+							<key>Info.plist:UIMainStoryboardFile</key>
+							<string>&lt;key&gt;UIMainStoryboardFile&lt;/key&gt;
+                            &lt;string&gt;Main&lt;/string&gt;
+                        </string>
+							<key>Info.plist:Privacy - Camera Usage Description</key>
+							<string>&lt;key&gt;Privacy - Camera Usage Description&lt;/key&gt;&lt;string&gt;This app uses the camera to project a sketch onto your face.&lt;/string&gt;</string>
+							<key>Info.plist:NSCameraUsageDescription</key>
+							<string>&lt;key&gt;NSCameraUsageDescription&lt;/key&gt;&lt;string&gt;This app uses the camera to project a sketch onto your face.&lt;/string&gt;</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>userInterface</string>
+			<key>Name</key>
+			<string>User Interface:</string>
+			<key>Description</key>
+			<string>The type of user interface.</string>
+			<key>Values</key>
+			<array>
+				<string>Storyboard</string>
+			</array>
+			<key>RequiredOptionsForValues</key>
+			<dict/>
+			<key>Default</key>
+			<string>Storyboard</string>
+			<key>Type</key>
+			<string>popup</string>
+		</dict>
+	</array>
+</dict>
+</plist>

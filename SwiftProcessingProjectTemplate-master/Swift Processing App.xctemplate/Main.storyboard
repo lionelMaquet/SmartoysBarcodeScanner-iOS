@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--App View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AppViewController"  customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="MySketch" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="YSS-sk-fcj" kind="showDetail" identifier="presentFace" id="FEt-SP-eX4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+        <!--Face View Controller-->
+        <scene sceneID="KX3-v3-6gF">
+            <objects>
+                <viewController storyboardIdentifier="faceViewController" id="YSS-sk-fcj" customClass="FaceViewController"  customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Jd-of-jDj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wvq-0d-rAg">
+                                <rect key="frame" x="0.0" y="-44" width="414" height="886"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZlD-3F-Rng" firstAttribute="top" secondItem="wvq-0d-rAg" secondAttribute="top" constant="44" id="Kfz-Qf-hG9"/>
+                            <constraint firstItem="wvq-0d-rAg" firstAttribute="bottom" secondItem="ZlD-3F-Rng" secondAttribute="bottom" constant="34" id="Kwy-ra-FFx"/>
+                            <constraint firstItem="ZlD-3F-Rng" firstAttribute="trailing" secondItem="wvq-0d-rAg" secondAttribute="trailing" id="fCG-EK-ejT"/>
+                            <constraint firstItem="wvq-0d-rAg" firstAttribute="leading" secondItem="ZlD-3F-Rng" secondAttribute="leading" id="hWb-0i-e62"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZlD-3F-Rng"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="wvq-0d-rAg" id="47k-cJ-vDP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EXR-gm-ren" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+</document>
